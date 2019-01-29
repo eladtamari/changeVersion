@@ -2,8 +2,10 @@
 
 FROM python:2
 
+ARG build_id
+
 ADD editJson.py /
 
 ADD Config.json /
 
-CMD [ "python", "./editJson.py", "17"]
+CMD [ "python", "./editJson.py", ${build_id}]
