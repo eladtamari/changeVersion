@@ -6,4 +6,4 @@ ADD editJson.py /
 
 ADD Config.json /
 
-CMD [ "python", "./editJson.py" "17"]
+CMD [ "python", "./editJson.py", "17"]
