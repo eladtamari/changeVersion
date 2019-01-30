@@ -6,7 +6,7 @@ with open("Config.json", 'r+') as f:
     data['install']['version'] = "1.0.0.{0}".format(sys.argv[1]) # <--- add `id` value.
     f.seek(0)        # <--- should reset file position to the beginning.
     print data['install']['version']
-    json.dump(data, f, indent=4)
+    #json.dump(data, f, indent=4)
     with open("resConfig.json", "r+") as g:
         json.dump(data, g, indent=4)
         
