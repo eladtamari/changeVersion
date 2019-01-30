@@ -6,4 +6,4 @@ ADD editJson.py $HOME/
 
 ADD Config.JSON $HOME/
 
-CMD [ "python", "./editJson.py", $build_id]
+ENTRYPOINT [ "python", "./editJson.py", "$build_id"]
