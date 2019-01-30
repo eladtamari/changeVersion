@@ -1,5 +1,5 @@
 FROM python:2
-
+Arg inBuildNum
 Env build_id=$inBuildNum
 
 ADD editJson.py $HOME/
