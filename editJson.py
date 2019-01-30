@@ -7,7 +7,7 @@ with open("Config.JSON", 'r+') as f:
     f.seek(0)        # <--- should reset file position to the beginning.
     print data['install']['version']
     json.dump(data, f, indent=4)
-    with open("resConfig.json", "r+") as g:
+    with open("resConfig.json", "w") as g:
         json.dump(data, g, indent=4)
         
 
